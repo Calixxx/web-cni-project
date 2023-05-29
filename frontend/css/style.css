@@ -8,6 +8,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -35,7 +40,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px 20px;
     background-color: #fff;
     grid-column: 2 / -1;
     position: fixed;
@@ -45,10 +50,10 @@ body{
 }
 
 .content{
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     grid-column: 2 / -1;
-    grid-row: 2 / 10;
-
+    grid-row: 2 / 2;
+    overflow: hidden;
 }
 
 .box-style{
@@ -197,4 +202,106 @@ body{
 .box > * {
     margin-right: 3px;
 }
+.body-part {
+    padding: 30px;
+    height: 100vh;
+}
 
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operations > *{
+    display: inline-flex;
+    margin: 20px 0;
+}
+
+.home-icon-box{
+    width: 350px;
+    height: 350px;
+}
+
+.home-icon{
+    width: 100%;
+    height: 100%;
+}
+
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    color: #F39200;
+}
+
+.call-to-action{
+    padding: 10px 15px;
+    background-color: #008D36;
+    color: #fff;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.box-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.box-check-status {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+.box-check-status::after{
+    content: "";
+    background-color: #dbdbdb;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    width: 1px;
+    height: 100%;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    color: #929090;
+    font-size: 15px;
+    border: solid 1px #dbdbdb;
+    width: 300px;
+    outline: none;
+}
+
+.input-wrapper {
+    position: relative;
+  }
+
+.valid-button{
+    position: absolute;
+    background-color: #008D36;
+    color: #fff;
+    padding: 15px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+}
+
+
+/*  */
+
+
+
+.sticky-content {
+    position: fixed;
+    top: 80px;
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    z-index: 2;
+    grid-column: 2 / -1;
+    grid-row: 2 / auto;
+  }
+  

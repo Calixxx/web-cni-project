@@ -21,9 +21,9 @@
             <div class="side-main-box">
                 <div class="menu-box">
                     <ul class="links">
-                        <li class="link-item"><i class="fa-solid fa-house"></i><a class="anchor" href="#">Accueil</a></li>
-                        <li class="link-item"><i class="fa-solid fa-list"></i><a class="anchor" href="#">Liste Enrolés</a></li>
-                        <li class="link-item"><i class="fa-solid fa-chart-simple"></i><a class="anchor" href="#">Statut des enrolés</a></li>
+                        <li class="link-item"><i class="fa-solid fa-house"></i><a class="anchor" href="#home">Accueil</a></li>
+                        <li class="link-item"><i class="fa-solid fa-list"></i><a class="anchor" href="#list-enrol">Liste Enrolés</a></li>
+                        <li class="link-item"><i class="fa-solid fa-chart-simple"></i><a class="anchor" href="#status-enrol">Statut des enrolés</a></li>
                     </ul>
                 </div>
                 <div class="side-footer-box">
@@ -60,7 +60,43 @@
 
             </div>
         </header>
-        <div class="content box-style">c</div>
+        <div class="content box-style">
+            <div class="body-part" id="home">
+                <div class = "home-container">
+                    <h3 class="welcome">Bienvenue !</h3>
+                    <p>Vous êtes sur laplateforme d'Administration de L'Oneci. <br/> Quelle Opération voulez vous effectuer ?</p>
+                    <div class="operations">
+                        <div class="call-to-action"><a href="">Faire un enrolement ?</a></div>
+                        <div class="call-to-action"><a href="#status-enrol">Verifier statut enrolement ?</a></div>
+                        <div class="call-to-action"><a href="#list-enrol">Voir la liste des enrolés ?</a></div>
+                    </div>
+                </div>
+                <div class="home-icon-box">
+                    <img class="home-icon" src="../images/icon.png" alt="icon">
+                </div>
+            </div>
+            
+            <div class="body-part" id="list-enrol">List Enrol</div>
+            <div class="body-part" id="status-enrol">
+                <h3 class="welcome"> Verifier votre statut</h3>
+                <div class="box-check">
+                    <div class="box-check-status">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Entrez votre texte">
+                            <button class="valid-button">Valider</button>
+                        </div>
+                    </div>
+                    <div class="chek-results">
+                        <h2>Vos Informations</h2>
+                        <ul>
+                            <li>Monnet Calix</li>
+                            <li>AE12345YHEU23</li>
+                            <li>AE12345YHEU23</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     
 
