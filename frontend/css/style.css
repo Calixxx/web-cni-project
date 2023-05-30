@@ -290,6 +290,23 @@ input[type="text"]{
     border: none;
 }
 
+.success{
+    background:#64c565;
+}
+
+.alert{
+    background-color: #e2a447;
+}
+
+.danger {
+    background-color: #cc1111;
+}
+.badge{
+    color : #fff;
+    padding:  5px 10px;
+    border-radius: 50px;
+}
+
 
 /*  */
 
